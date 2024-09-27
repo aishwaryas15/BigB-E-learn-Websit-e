@@ -19,6 +19,7 @@
 
     <!-- Custom Style   -->
     <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="../navbar.css">
   </head>
 
   <body>
@@ -29,31 +30,43 @@
     <!--   Navigation  -->
 
     <header>
-      <div class="big-wrapper container">
-        <div class="logo">
-          <a href="../index.html"><img src="assets/v.png" alt="Logo"></a>
-          <h3>igB</h3>
-        </div>
+      <div class="header-wrapper">
+          <a href="../index.html" class="logo">
+              <img src="../img/v.png" alt="Logo" />
+              <h3>igB</h3>
+          </a>
 
-        <div class="links">
-          <ul>
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="../index.html#welcome">ABOUT</a></li>
-            <li><a href="../Course/Courses.html">COURSES</a></li>
-            <li><a href="../feature-pg/features.html">FEATURES</a></li>
-            <li><a href="./blog.html">BLOGS</a></li>
-            <li><a href="../contact/contact.html">CONTACT US</a></li>
-            <li><a href="../log in/Login.html" class="btn">SIGN UP</a></li>
-          </ul>
-        </div>
+          <div class="nav d-lg">
+              <h2><a href="../index.html">Home</a></h2>
+              <h2><a href="../index.html#welcome">About</a></h2>
+              <h2><a href="../Course/Courses.html">Courses</a></h2>
+              <h2><a href="../feature-pg/feature.html">Features</a></h2>
+              <h2><a href="../Blog/blog.html">Blogs</a></h2>
+              <h2><a href="../contact/contact.html">Contact</a></h2>
+          </div>
 
-        <div class="overlay"></div>
+          <div class="nav d-lg">
+              <h2 style="padding-top:0;"><a href="../log in/Login.html" class="btn-n sign-in">Sign In</a></h2>
+          </div>
 
-        <div class="hamburger-menu">
-          <div class="bar"></div>
-        </div>
+          <div class="dropdown-menu">
+              <svg xmlns="http://www.w3.org/2000/svg" height="70%" fill="currentColor" class="bi bi-list dropdown-btn"
+                  viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+              </svg>
+              <div class="dropdown-content">
+                  <h2><a href="../index.html">Home</a></h2>
+                  <h2><a href="../index.html#welcome">About</a></h2>
+                  <h2><a href="../Course/Courses.html">Courses</a></h2>
+                  <h2><a href="../feature-pg/feature.html">Features</a></h2>
+                  <h2><a href="../Blog/blog.html">Blogs</a></h2>
+                  <h2><a href="../contact/contact.html">Contact</a></h2>
+                  <h2><a href="../log in/Login.html">Sign In</a></h2>
+              </div>
+          </div>
       </div>
-    </header>
+  </header>
     <!-- ------------x---------------  Navigation --------------------------x------------------- -->
 
     <!----------------------------- Main Site Section ------------------------------>
@@ -63,9 +76,9 @@
 
       <section class="site-title">
         <div class="site-background" data-aos="fade-up" data-aos-delay="100">
-          <h3>Let's Travel</h3>
-          <h1>The Amazing World of Knowledge</h1>
-          <button class="btn">Explore</button>
+          <h3 class="heading"> Let's Travel</h3>
+          <h1 heading>The Amazing World of Knowledge</h1>
+          <button class="btn btn-bg">Explore</button>
         </div>
       </section>
 
@@ -84,7 +97,7 @@
               >
                 <img src="./assets/Blog-post/blog5.jpg" alt="post-1" />
                 <div class="blog-title">
-                  <h3>10 Best Free AWS Learning Resources for Beginners</h3>
+                  <div class="h3_blogtitle"><h3>10 Best Free AWS Learning Resources for Beginners</h3></div>
                   <a href="https://shivanshh.hashnode.dev/10-best-free-aws-learning-resources-for-beginners" target="_blank"> <button class="btn btn-blog">Read</button></a>
                   <span>2 minutes</span>
                 </div>
@@ -92,7 +105,7 @@
               <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
                 <img src="./assets/Blog-post/blog6.jpg" alt="post-1"/>
                 <div class="blog-title">
-                  <h3>Optimize with AWS Cost Explorer</h3>
+                  <div class="h3_blogtitle"><h3>Optimize with AWS Cost Explorer</h3></div>
                   <a href="https://shivanshh.hashnode.dev/optimize-with-aws-cost-explorer" target="_blank"><button class="btn btn-blog">Read</button></a>
                   <span>2 minutes</span>
                 </div>
@@ -104,7 +117,7 @@
               >
               <img src="./assets/Blog-post/blog7.jpg" alt="post-1" />
                 <div class="blog-title">
-                  <h3>50 Best AWS Interview Questions in 2021</h3>
+                  <div class="h3_blogtitle"><h3>50 Best AWS Interview Questions in 2021</h3></div>
                   <a href="https://shivanshh.hashnode.dev/50-best-aws-interview-questions-in-2021-ckqvaco8w04fcmms1f6j795fy" target="_blank"> <button class="btn btn-blog">Read</button></a>
                   <span>2 minutes</span>
                 </div>
@@ -116,10 +129,10 @@
               >
                 <img src="./assets/Blog-post/blog13.jpg" alt="post-1" />
                 <div class="blog-title">
-                  <h3>
+                  <div class="h3_blogtitle"><h3>
                     10+ Best Campus Ambassador Programs for Computer Science
                     Undergrad Students
-                  </h3>
+                  </h3></div>
                   <a href="https://shivanshh.hashnode.dev/10-best-campus-ambassador-programs-for-computer-science-undergrad-students-ckqibqscq00r5u9s14g6p1ngy" target="_blank"><button class="btn btn-blog">Read</button></a>
                   <span>2 minutes</span>
                 </div>
@@ -152,7 +165,7 @@
                             <div class="post-info flex-row">
                                 <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
                                 <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14, 2019</span>
-                                <span>2 Commets</span>
+                                <span>2 Comments</span>
                             </div>
                         </div>
                         <div class="post-title">
@@ -265,11 +278,11 @@
                   <span>(05)</span>
                 </li>
                 <li class="list-items" data-aos="fade-left" data-aos-delay="200">
-                  <a href="#">Techonlogy</a>
+                  <a href="#">Technology</a>
                   <span>(02)</span>
                 </li>
                 <li class="list-items" data-aos="fade-left" data-aos-delay="300">
-                  <a href="#">E-Book</a>
+                  <a href="#">E-Books</a>
                   <span>(07)</span>
                 </li>
                 <li class="list-items" data-aos="fade-left" data-aos-delay="400">
@@ -277,13 +290,13 @@
                   <span>(01)</span>
                 </li>
                 <li class="list-items" data-aos="fade-left" data-aos-delay="500">
-                  <a href="#">Vedas</a>
+                  <a href="#">Videos</a>
                   <span>(08)</span>
                 </li>
               </ul>
             </div>
             <div class="popular-post">
-              <h2>Popular Post</h2>
+              <h2>Popular Posts</h2>
               <div class="post-content" data-aos="flip-up" data-aos-delay="200">
                 <div class="post-image">
                   <div>
@@ -310,7 +323,7 @@
                     <span
                       ><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14, 2021</span
                     >
-                    <span>2 Commets</span>
+                    <span>2 Comments</span>
                   </div>
                 </div>
                 <div class="post-title">
@@ -327,7 +340,7 @@
                       ><i class="fas fa-calendar-alt text-gray"></i
                       >&nbsp;&nbsp;January 14, 2021</span
                     >
-                    <span>2 Commets</span>
+                    <span>2 Comments</span>
                   </div>
                 </div>
                 <div class="post-title">
@@ -348,7 +361,7 @@
                       ><i class="fas fa-calendar-alt text-gray"></i
                       >&nbsp;&nbsp;January 14, 2021</span
                     >
-                    <span>2 Commets</span>
+                    <span>2 Comments</span>
                   </div>
                 </div>
                 <div class="post-title">
@@ -369,7 +382,7 @@
                       ><i class="fas fa-calendar-alt text-gray"></i
                       >&nbsp;&nbsp;January 14, 2021</span
                     >
-                    <span>2 Commets</span>
+                    <span>2 Comments</span>
                   </div>
                 </div>
                 <div class="post-title">
@@ -431,7 +444,7 @@
     <footer class="footer">
       <div class="container">
         <div class="about-us" data-aos="fade-right" data-aos-delay="200">
-          <h2>About us</h2>
+          <h2>About Us</h2>
           <p>
             BigB is a E-learning website , covers all the Knowledgeable material
             from UNIVERSITY to UNIVERSE.😍😍<br /><br />
@@ -440,7 +453,7 @@
         </div>
         <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
           <h2>Newsletter</h2>
-          <p>Stay update with our latest</p>
+          <p>Stay up to date with our latest news</p>
           <div class="form-element">
             <input type="text" placeholder="Email" /><span
               ><i class="fas fa-chevron-right"></i
@@ -462,12 +475,12 @@
         </div>
         <div class="follow" data-aos="fade-left" data-aos-delay="200">
           <h2>Follow us</h2>
-          <p>Let us be Social</p>
-          <div>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-youtube"></i>
+          <p>Let's stay connected</p>
+          <div class="social-links">
+            <a href="#" style="padding: 2px;"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/channel/UCRkYp3SkqvR5OD8YiTqVEbQ" style="padding: 2px;"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/beasidehustler/" style="padding: 2px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/Sidehustlers" style="padding: 2px;"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -477,9 +490,9 @@
           <a href="www.youtube.com/c/dailytuition" target="_black">BigB </a>
         </h4>
       </div>
-      <div class="move-up">
+      <!-- <div class="move-up">
         <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
-      </div>
+      </div> -->
     </footer>
 
     <!-- -------------x------------- Footer --------------------x------------------- -->
@@ -495,29 +508,9 @@
 
     <!-- Custom Javascript file -->
     <script src="./js/main.js"></script>
-    <script>
-      let big_wrapper = document.querySelector(".big-wrapper");
-      let hamburger_menu = document.querySelector(".hamburger-menu");
-      hamburger_menu.addEventListener("click", () => {
-        big_wrapper.classList.toggle("active");
-      });
-    </script>
-    <script>
-      // floating button to the top 
-      $(document).ready(function() {
-          $(document).scroll(function(){
-              if($(this).scrollTop() > 100){
-                  $("#scroll").fadeIn();
-              } else{
-                  $("#scroll").fadeOut();
-              }
-          });
-          $("#scroll").click(function () {
-              $("html,body").animate({scrollTop:0},600);
-              return false;
-          });
-      });
     
-    </script>
+    <script src="./js/BigWrapper.js"></script>       <!-- Code optimization -->
+    
+    <script src="./js/FloatingButton.js"></script>    <!-- Code optimization -->
   </body>
 </html>
